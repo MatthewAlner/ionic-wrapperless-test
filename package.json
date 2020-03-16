@@ -4,12 +4,11 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "s": "yarn start",
+    "start": "ionic serve",
+    "run:android": "ionic cordova run android",
+    "build:android": "ionic cordova build android",
+    "build:web:prod": "ionic build --prod"
   },
   "private": true,
   "dependencies": {
