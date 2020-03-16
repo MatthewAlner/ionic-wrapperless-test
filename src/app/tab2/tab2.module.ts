@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { CustomAvatarComponent } from './custom-avatar/custom-avatar.component';
+import { UnwrapDirective } from './unwrap.directive';
+import { Unwrap2Directive } from './unwrap2.directive';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { CustomAvatarComponent } from './custom-avatar/custom-avatar.component';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: Tab2Page }])
   ],
-  declarations: [Tab2Page, CustomAvatarComponent]
+  declarations: [Tab2Page, CustomAvatarComponent, UnwrapDirective, Unwrap2Directive]
 })
 export class Tab2PageModule {}
